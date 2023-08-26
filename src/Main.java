@@ -63,16 +63,16 @@ public class Main {
         // Use Teams
         printBaseColor("Create Team 1:");
         Team<BaseballPlayer> t1 = new Team<BaseballPlayer>("T1");
-        t1.addPlayer(new BaseballPlayer("Hans", 66));
+        t1.addPlayer(new BaseballPlayer("Hans"));
         t1.addPlayer(new BaseballPlayer("Ueli", 88));
-        t1.addPlayer(new BaseballPlayer("Meier", 75));
+        t1.addPlayer(new BaseballPlayer("Meier"));
         t1.printPlayers();
 
         printBaseColor("Create Team 2:");
         Team<BaseballPlayer> t2 = new Team<BaseballPlayer>("T2");
-        t2.addPlayer(new BaseballPlayer("Freni", 33));
-        t2.addPlayer(new BaseballPlayer("Erika", 55));
-        t2.addPlayer(new BaseballPlayer("Quasi", 42));
+        t2.addPlayer(new BaseballPlayer("Freni"));
+        t2.addPlayer(new BaseballPlayer("Erika"));
+        t2.addPlayer(new BaseballPlayer("Quasi"));
         t2.printPlayers();
 
         printBaseColor("Team 1 vs Team 2 in a match:");
