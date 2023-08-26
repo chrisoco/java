@@ -54,6 +54,10 @@ public class Main {
         // players.forEach(player -> {
         //     player.printInfo();
         // });
+        // Oder:
+        // for (Player player : players) {
+        //      player.sayHello();
+        // }
 
     }
 
