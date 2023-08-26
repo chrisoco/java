@@ -1,4 +1,4 @@
-public abstract class Player implements CanSayHello{
+public abstract class Player implements CanSayHello, CanPrintInfo, Comparable<Player> {
 
     private String name;
     private int rating;
@@ -12,6 +12,23 @@ public abstract class Player implements CanSayHello{
 
     public void sayHello(String message) {
         System.out.println(this.color.getCode() + message + this.rating);
+    }
+
+    @Override
+    public void printInfo() {
+        System.out.println(this.color.getCode() + "Name: " + this.name + " | Rating: "+ this.rating);
+    }
+
+    @Override
+    public int compareTo(Player o) {
+        if(this.rating < o.getRating()) {
+            return -1;
+        } else if(this.rating > o.getRating()) {
+            return 1;
+        }
+        return 0;
+        // Das gleiche wie:
+        // return Integer.compare(this.rating, o.getRating());
     }
 
     public String getName() {

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
@@ -42,6 +43,17 @@ public class Main {
         for (Player player : players) {
             player.sayHello();
         }
+
+
+        printBaseColor("Sort Players based on rating (Comparable Interface):");
+        Collections.sort(players);
+
+        printBaseColor("Print all Player Names + Score with Lambda:");
+        players.forEach(Player::printInfo);
+        // Gleiche wie:
+        // players.forEach(player -> {
+        //     player.printInfo();
+        // });
 
     }
 
